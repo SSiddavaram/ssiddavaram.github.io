@@ -1,0 +1,9 @@
+<section>
+	<div class="text-center" style="margin-top: 5%" ng-init="getPosts()">
+		<ul ng-repeat="post in posts" style="list-style-type: none;">
+			<li>
+				<a href="#/blog/posts/{{post.postUrl}}" style="text-decoration: none">{{post.title}}</a>
+			</li>
+		</ul> 
+	</div>
+</section>

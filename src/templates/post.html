@@ -1,0 +1,6 @@
+<div ng-init="getPostByID()">
+	<h3 class="text-center">{{post.title}}</h3>
+	<article>
+		<div data-ng-include="'src/templates/posts/'+post.postUrl"></div>
+	</article>
+</div>
