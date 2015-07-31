@@ -4,12 +4,27 @@
 	<title>Soujanya Siddavaram</title>
 	<link rel="stylesheet" href="src/bower_components/components-font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="src/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="src/styles/css/main.css" />
 	<link rel="icon" href="src/images/me.ico">
 </head>
-<body style="height: 100%" ng-app="app">
+<body ng-app="app">
 	<section>
-		<div style="height: 100%;" class="container">
-			<div ng-view></div>
+		<div id="mainContent">
+			<div style="background-color: #70DBDB;" class="text-center">
+				<h2 style="font-family: Cursive; color:white; padding: 1%; margin-top: 0;">Soujanya Siddavaram</h2>
+			</div>
+			<div class="content">
+				<div style="float:left; width:10%;">
+					<div ng-include="'src/templates/menu.html'"></div>
+				</div>
+			
+				<div id="content-panel" style="float:right; width:90%;"> 
+					<div ng-view></div>
+				</div>
+			</div>
+			<div class="footer">
+				<div ng-include="'src/templates/footer.html'"></div>
+			</div>
 		</div>
 	</section>
 	<script src="src/bower_components/jquery/dist/jquery.js"></script>

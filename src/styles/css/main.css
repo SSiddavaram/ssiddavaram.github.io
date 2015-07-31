@@ -1,0 +1,37 @@
+html,body{
+    height: 100%
+}
+
+#mainContent .navbar-side li a {
+    background: #3A444D;
+    border-left: 5px solid transparent;
+}
+#mainContent .navbar-side li a.active-menu {
+    background-color: #fff !important;
+}
+
+    #mainContent.nav-expanded .navbar-side li a:hover {
+        background: #202f3a;
+    }
+
+.navbar-default .navbar-nav > .active{
+    color: #000;
+   background: #d65c14;
+ }
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: #000;
+      background: #d65c14;
+ }
+
+.footer{
+	position: relative;
+  	height: 5%;
+  	clear:both;
+  	margin-right: 40px;
+  }
+
+  .content{
+  	height: 90%
+  }
