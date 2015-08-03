@@ -2,7 +2,8 @@
 var app = angular.module('app');
 app.factory('blogService', ['$http', '$q',
 	function($http,$q) {
-		var posts = [{'postId': 1, 'title' : 'Abdul Kalam About Dreams', 'postUrl' : 'apj.html'}];
+		var posts = [{'postId': 1, 'title' : 'My First Post', 'postUrl' : 'first-post.html'},
+					 {'postId': 2, 'title' : 'Abdul Kalam About Dreams', 'postUrl' : 'apj.html'}];
 		var blogService = {
 			getPosts: function(){
  				return posts;

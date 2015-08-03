@@ -10,9 +10,9 @@ html,body{
     background-color: #fff !important;
 }
 
-    #mainContent.nav-expanded .navbar-side li a:hover {
-        background: #202f3a;
-    }
+#mainContent.nav-expanded .navbar-side li a:hover {
+    background: #202f3a;
+}
 
 .navbar-default .navbar-nav > .active{
     color: #000;
@@ -26,12 +26,42 @@ html,body{
  }
 
 .footer{
-	position: relative;
+	  position: relative;
   	height: 5%;
   	clear:both;
   	margin-right: 40px;
   }
 
-  .content{
+.content{
   	height: 90%
+}
+
+  @media only screen and (max-device-width: 480px) and (orientation:portrait), only screen and (min-device-width: 640px) and (max-device-width: 1136px)  and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background-color: white;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
   }
+
+  .content {
+    width: 800px;
+    margin: 60px auto auto auto;
+    padding: 5px 10px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (orientation:landscape), only screen and (min-device-width: 640px) and (max-device-width: 1136px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background-color: white;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content {
+    width: 980px;
+    margin: 60px auto auto auto;
+    padding: 5px 10px;
+  }
+}

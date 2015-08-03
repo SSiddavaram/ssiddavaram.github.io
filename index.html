@@ -11,18 +11,15 @@
 	<section>
 		<div id="mainContent">
 			<div style="background-color: #70DBDB;" class="text-center">
-				<h2 style="font-family: Cursive; color:white; padding: 1%; margin-top: 0;">Soujanya Siddavaram</h2>
+				<a href="#/Home" style="text-decoration: none;"><h2 style="font-family: Cursive; color:white; padding: 1%; margin-top: 0;">Soujanya Siddavaram</h2></a>
 			</div>
-			<div class="content">
-				<div style="float:left; width:10%;">
-					<div ng-include="'src/templates/menu.html'"></div>
-				</div>
-			
-				<div id="content-panel" style="float:right; width:90%;"> 
+			<div class="content">			
+				<div id="content-panel"> 
 					<div ng-view></div>
 				</div>
 			</div>
 			<div class="footer">
+				<br/>
 				<div ng-include="'src/templates/footer.html'"></div>
 			</div>
 		</div>
