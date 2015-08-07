@@ -1,0 +1,29 @@
+<div>
+<br/><br/>	
+
+	<div style="padding-right: 20%; padding-left: 20%"><p>I have been working on a simple project for one of my friend. The requirement was to get some data in the form of json from a webservice. I thought I would develop the UI using angular js and get the data using the ajax call. While implementing, I faced an issue. The browser was not allowing cross domain requests. The web service resides in another domain. I did little more research and found out that there are couple of ways to perform cross domain requests. 
+
+	<br/><br/>
+	<strong>1. CORS</strong>
+	<br/>
+	<strong>Cross-origin resource sharing (CORS)</strong> is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the resource originated.
+	<br/><br/>
+	For simple CORS requests, the server only needs to add the following header to its response:
+	<br/>
+    <code>Access-Control-Allow-Origin: *</code>
+
+    <br/><br/>
+	<strong>2. JSONP</strong> (JSON with padding)<br/>
+	This is a communication technique used o request data from a server in a different domain something prohibited by typical web browsers because of the same-origin policy. 
+
+	<br/><br/>
+	JSONP takes advantage of the fact that browsers do not enforce the same-origin policy on 
+	<code>script</code> tags. Since it works through <code>script</code> tags, JSONP supports only the GET request method. There are significant security implications and risks associated to using JSONP; unless you have no choice, CORS is usually the better choice.
+
+	<br/><br/>
+	You pass along a named javascript function that tells the server to wrap its response and when it responds your data is neatly wrapped with a helper function. This gets around the Same Origin Policy since script tags are ok’d for cross domain execution, which is how we can include JS libs from CDNs and other sources. In order to be able to use JSONP, the third party server must support it. In other words wrapping JSON data into a function call.
+    </p>
+
+    </div>  
+
+</div>

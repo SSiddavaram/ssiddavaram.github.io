@@ -2,8 +2,9 @@
 var app = angular.module('app');
 app.factory('blogService', ['$http', '$q',
 	function($http,$q) {
-		var posts = [{'postId': 1, 'title' : 'My First Post', 'postUrl' : 'first-post.html'},
-					 {'postId': 2, 'title' : 'Abdul Kalam About Dreams', 'postUrl' : 'apj.html'}];
+		var posts = [{'postId': 1, 'title' : 'Cross Domain Ajax Request', 'postUrl' : 'cross-domain-ajax-request.html'},
+					 {'postId': 2, 'title' : 'Abdul Kalam About Dreams', 'postUrl' : 'apj.html'},
+					 {'postId': 3, 'title' : 'My First Post', 'postUrl' : 'first-post.html'}];
 		var blogService = {
 			getPosts: function(){
  				return posts;
