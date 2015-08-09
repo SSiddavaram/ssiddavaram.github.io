@@ -1,5 +1,33 @@
-html,body{
+html,body {
     height: 100%
+}
+
+header {
+    position: fixed;
+    text-align: center;
+    padding: 10px; 
+    top: 0;
+    background-color: #70DBDB;
+    width: 100%;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+.name-font {
+    font-size: 25px;
+}
+
+.name {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    color:white; 
+}
+
+.about-font {
+    font-size: 18px
 }
 
 #mainContent .navbar-side li a {
@@ -25,9 +53,10 @@ html,body{
       background: #d65c14;
  }
 
- #disqus_thread {
+#disqus_thread {
      position: relative;
 }
+
 #disqus_thread:after {
      content: "";
      display: block;
@@ -38,6 +67,10 @@ html,body{
      background: white;
 }
 
+.twBtn {
+    margin-right: 40px;
+}
+
 .footer{
 	  position: relative;
   	height: 5%;
@@ -46,7 +79,8 @@ html,body{
   }
 
 .content{
-  	height: 90%
+  	height: 90%;
+    margin-top: 7%;
 }
 
   @media only screen and (max-device-width: 480px) and (orientation:portrait), only screen and (min-device-width: 640px) and (max-device-width: 1136px)  and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -57,9 +91,13 @@ html,body{
     padding: 0;
   }
 
+  .twBtn {
+      margin-right: 0;
+  }
+
   .content {
     width: 800px;
-    margin: 40px auto auto auto;
+    margin: 60px 30px auto auto;
     padding: 5px 10px;
   }
 }
@@ -75,6 +113,7 @@ html,body{
   .content {
     width: 980px;
     margin: 60px auto auto auto;
+
     padding: 5px 10px;
   }
 }
