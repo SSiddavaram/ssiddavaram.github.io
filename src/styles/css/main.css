@@ -60,7 +60,6 @@ header a:hover, header a:focus {
 .content{
   	height: 90%;
     margin-top: 7%;
-    padding-bottom:100px;
 }
 
   @media only screen and (max-device-width: 480px) and (orientation:portrait), only screen and (min-device-width: 640px) and (max-device-width: 1136px)  and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
